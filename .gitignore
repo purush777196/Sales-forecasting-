@@ -1,0 +1,115 @@
+# ==============================================================================
+# ShopCast - .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets (NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Database files & local dumps
+*.sql.gz
+*.dump
+*.sqlite3
+*.db
+
+# Data directories: ignore actual data files, keep directory structure via .gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+
+# Model binaries & checkpoints: ignore generated models, keep directory structure
+models/*
+!models/.gitkeep
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.bin
+*.h5
+*.onnx
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Pytest / Coverage / Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+nosetests.xml
+coverage.xml
+
+# Logs
+*.log
+logs/
+reports/*.log
+
+# Power BI temporary files and user settings
+*.pbix.cache
+*.pbit.cache
+powerbi/*.pbix
+powerbi/*.pbit
+!powerbi/README.md
+!powerbi/.gitkeep
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor Settings
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.cursor/
+
